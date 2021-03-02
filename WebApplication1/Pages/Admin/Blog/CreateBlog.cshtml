@@ -1,0 +1,29 @@
+﻿@page
+@model WebApplication1.Pages.Admin.Blog.CreateBlogModel
+@{
+}
+
+<form method="post">
+    <div>
+        <label asp-for="Blog.Title"></label>
+        <input asp-for="Blog.Title" />
+        <span asp-validation-for="Blog.Title"></span>
+    </div>
+    <div>
+        <label asp-for="Blog.Date"></label>
+        <input asp-for="Blog.Date" />
+        <span asp-validation-for="Blog.Date"></span>
+    </div>
+    <div>
+        <label asp-for="Blog.Content"></label>
+        <input asp-for="Blog.Content" />
+        <span asp-validation-for="Blog.Content"></span>
+    </div>
+    <div>
+        <label asp-for="Blog.Author"></label>
+        <select asp-for="Blog.Author" asp-items="Model.AuthorList"></select>
+        <span asp-validation-for="Blog.Author"></span>
+    </div>
+    <input type="submit" value="Create Blog" />
+</form>
+

@@ -1,0 +1,53 @@
+﻿@page
+@model WebApplication1.Pages.Admin.Author.CreateAuthorModel
+@{
+}
+
+<form method="post">
+    <div>
+        <label asp-for="Author.Name"></label>
+        <input asp-for="Author.Name" />
+        <span asp-validation-for="Author.Name"></span>
+    </div>
+    <div>
+        <label asp-for="Author.Last"></label>
+        <input asp-for="Author.Last" />
+        <span asp-validation-for="Author.Last"></span>
+    </div>
+    <div>
+        <label asp-for="Author.Email"></label>
+        <input asp-for="Author.Email" />
+        <span asp-validation-for="Author.Email"></span>
+    </div>
+    <div>
+        <label asp-for="Author.DOB"></label>
+        <input asp-for="Author.DOB" />
+        <span asp-validation-for="Author.DOB"></span>
+    </div>
+    <div>
+        <label asp-for="Author.Website"></label>
+        <input asp-for="Author.Website" />
+        <span asp-validation-for="Author.Website"></span>
+    </div>
+    <div>
+        <label asp-for="Author.Phone"></label>
+        <input asp-for="Author.Phone" />
+        <span asp-validation-for="Author.Phone"></span>
+    </div>
+    <div>
+        <label asp-for="Author.Province"></label>
+        <input asp-for="Author.Province" />
+        <span asp-validation-for="Author.Province"></span>
+    </div>
+    <div>
+        <label asp-for="Author.Country"></label>
+        <input asp-for="Author.Country" />
+        <span asp-validation-for="Author.Country"></span>
+    </div>
+    <div>
+        <label asp-for="Author.Pincode"></label>
+        <input asp-for="Author.Pincode" />
+        <span asp-validation-for="Author.Pincode"></span>
+    </div>
+    <input type="submit" value="Create Author" />
+</form>
